@@ -1,0 +1,23 @@
+{
+  "name": "gestion-prestamos-sql",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de préstamos con scripts SQL para PostgreSQL 16",
+  "scripts": {
+    "setup": "psql -U postgres -f scripts/01_creacion_tablas.sql",
+    "insert-data": "psql -U postgres -f scripts/02_insercion_datos.sql",
+    "run-crud": "psql -U postgres -f scripts/03_consultas_crud_basicas.sql",
+    "run-advanced": "psql -U postgres -f scripts/04_consultas_avanzadas.sql",
+    "run-optimized": "psql -U postgres -f scripts/05_optimizacion_consultas.sql"
+  },
+  "keywords": [
+    "sql",
+    "postgresql",
+    "prestamos",
+    "dml"
+  ],
+  "author": "Equipo de Ingeniería",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "~5.4.5"
+  }
+}
